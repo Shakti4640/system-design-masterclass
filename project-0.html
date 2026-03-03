@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏗️ SYSTEM DESIGN — COMPLETE MASTERY GUIDE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div id="progress-bar-container"><div id="progress-bar" style="width:0%"></div></div>
+<div id="progress-label">0%</div>
+<div class="page-wrapper">
+<div class="chat-message"><div class="px-2"><h1>🏗️ SYSTEM DESIGN — COMPLETE MASTERY GUIDE</h1>
+<h2>50 Projects: Problem-Driven, Progressive Complexity</h2>
+<hr>
+<hr>
+<h1>📖 COMPLETE TABLE OF CONTENTS</h1>
+<hr>
+<h2>📋 PHASE 1: VERY EASY — FOUNDATION THINKING (Projects 1–8)</h2>
+<blockquote>
+<p><em>Building the mental model of how computers talk, store, and serve</em></p>
+</blockquote>
+<table><thead><tr><th>#</th><th>Project Title</th><th>Core Concept Introduced</th><th>Link Dependency</th></tr></thead><tbody><tr><td>1</td><td><strong>The Pizza Shop — Understanding Client-Server Model</strong></td><td>Client → Server → Response cycle → Ports → Protocols</td><td>None (Starting Point)</td></tr><tr><td>2</td><td><strong>The Restaurant Menu — Designing Your First REST API</strong></td><td>HTTP Methods → Endpoints → Status Codes → Request/Response Format</td><td>Builds on Project 1</td></tr><tr><td>3</td><td><strong>The Notebook — Single Database Design &amp; Schema Modeling</strong></td><td>Tables → Relationships → CRUD → ACID Properties → SQL Basics</td><td>Builds on Projects 1, 2</td></tr><tr><td>4</td><td><strong>The Overflowing Counter — Vertical vs Horizontal Scaling</strong></td><td>Scale-Up vs Scale-Out → Resource Limits → Throughput → Latency Definition</td><td>Builds on Projects 1, 2, 3</td></tr><tr><td>5</td><td><strong>The Librarian's Memory — Caching Fundamentals</strong></td><td>Cache Layer → TTL → Cache Hit/Miss → Eviction Policies (LRU, LFU)</td><td>Builds on Projects 3, 4</td></tr><tr><td>6</td><td><strong>The Traffic Cop — Load Balancer Basics</strong></td><td>Round Robin → Least Connections → Health Probes → Reverse Proxy</td><td>Builds on Projects 1, 4</td></tr><tr><td>7</td><td><strong>The Phone Book — DNS &amp; Domain Resolution</strong></td><td>DNS Hierarchy → A Records → TTL → Resolution Flow → CDN Hint</td><td>Builds on Projects 1, 6</td></tr><tr><td>8</td><td><strong>The Hotel Key Card — Stateless vs Stateful Services</strong></td><td>Session Management → Tokens → JWT Basics → Sticky Sessions → Shared State</td><td>Builds on Projects 5, 6</td></tr></tbody></table>
+<hr>
+<h2>📋 PHASE 2: EASY — CORE PATTERNS (Projects 9–15)</h2>
+<blockquote>
+<p><em>Recognizing repeating problems and applying first-principle patterns</em></p>
+</blockquote>
+<table><thead><tr><th>#</th><th>Project Title</th><th>Core Concept Introduced</th><th>Link Dependency</th></tr></thead><tbody><tr><td>9</td><td><strong>The Bouncer at the Door — API Rate Limiter</strong></td><td>Token Bucket → Sliding Window → Fixed Window → Per-User Limits</td><td>Builds on Projects 2, 5, 8</td></tr><tr><td>10</td><td><strong>The Book Index — Database Indexing &amp; Query Optimization</strong></td><td>B-Tree Index → Composite Index → Query Plans → Index Tradeoffs</td><td>Builds on Project 3</td></tr><tr><td>11</td><td><strong>The Post Office — Message Queues &amp; Async Processing</strong></td><td>Producer → Consumer → Queue → Decoupling → At-Least-Once Delivery</td><td>Builds on Projects 2, 4</td></tr><tr><td>12</td><td><strong>The Warehouse Network — CDN &amp; Static Content Delivery</strong></td><td>Edge Servers → Origin Pull → Push CDN → Cache Invalidation</td><td>Builds on Projects 5, 7</td></tr><tr><td>13</td><td><strong>The Backup Diary — Database Replication (Read Replicas)</strong></td><td>Primary-Replica → Replication Lag → Read/Write Splitting → Failover</td><td>Builds on Projects 3, 4, 6</td></tr><tr><td>14</td><td><strong>The Circular Seating — Consistent Hashing</strong></td><td>Hash Ring → Virtual Nodes → Node Addition/Removal → Data Ownership</td><td>Builds on Projects 4, 6</td></tr><tr><td>15</td><td><strong>The Pulse Check — Heartbeat, Health Checks &amp; Monitoring</strong></td><td>Heartbeat Protocol → Liveness vs Readiness → Failure Detection → Timeouts</td><td>Builds on Projects 6, 11</td></tr></tbody></table>
+<hr>
+<h2>📋 PHASE 3: MEDIUM — PROFESSIONAL TECHNIQUES (Projects 16–30)</h2>
+<blockquote>
+<p><em>Designing real systems end-to-end with tradeoff awareness</em></p>
+</blockquote>
+<table><thead><tr><th>#</th><th>Project Title</th><th>Core Concept Introduced</th><th>Link Dependency</th></tr></thead><tbody><tr><td>16</td><td><strong>TinyLink — Design a URL Shortener (End-to-End)</strong></td><td>Base62 Encoding → ID Generation → Read-Heavy Design → 301 vs 302 Redirects</td><td>Builds on Projects 2, 3, 5, 10</td></tr><tr><td>17</td><td><strong>PasteDrop — Design a Pastebin / Text Storage Service</strong></td><td>Object Storage vs DB → Expiration Policies → Content Addressing</td><td>Builds on Projects 3, 16</td></tr><tr><td>18</td><td><strong>The Splitting Library — Database Sharding Strategies</strong></td><td>Range Sharding → Hash Sharding → Shard Key Selection → Cross-Shard Queries</td><td>Builds on Projects 10, 13, 14</td></tr><tr><td>19</td><td><strong>The Front Gate — API Gateway Design</strong></td><td>Routing → Authentication → Rate Limiting Aggregation → Request Transformation</td><td>Builds on Projects 2, 6, 8, 9</td></tr><tr><td>20</td><td><strong>The Service Directory — Service Discovery &amp; Registry</strong></td><td>Client-Side vs Server-Side Discovery → Service Registry → DNS-Based Discovery</td><td>Builds on Projects 7, 15, 19</td></tr><tr><td>21</td><td><strong>The Circuit Breaker — Resilience in Distributed Calls</strong></td><td>Closed → Open → Half-Open States → Fallback → Bulkhead Pattern</td><td>Builds on Projects 11, 15, 20</td></tr><tr><td>22</td><td><strong>The Detective Trail — Distributed Logging &amp; Tracing</strong></td><td>Correlation IDs → Log Aggregation → Trace Spans → Structured Logging</td><td>Builds on Projects 15, 19, 20</td></tr><tr><td>23</td><td><strong>MiniRedis — Design a Key-Value Store</strong></td><td>In-Memory Storage → Persistence (AOF/RDB) → Hash Partitioning → Expiry</td><td>Builds on Projects 5, 14, 18</td></tr><tr><td>24</td><td><strong>BuzzAlert — Design a Notification Service</strong></td><td>Push vs Pull → Fan-Out → Priority Queues → Multi-Channel Delivery</td><td>Builds on Projects 11, 19, 21</td></tr><tr><td>25</td><td><strong>CloudVault — File Upload &amp; Storage Service</strong></td><td>Chunked Upload → Multipart → Deduplication → Metadata DB + Blob Store</td><td>Builds on Projects 3, 17, 18</td></tr><tr><td>26</td><td><strong>The Crown — Leader Election in Distributed Systems</strong></td><td>Bully Algorithm → ZooKeeper Model → Split Brain → Fencing Tokens</td><td>Builds on Projects 13, 15, 21</td></tr><tr><td>27</td><td><strong>The Shared Lock — Distributed Locking Mechanisms</strong></td><td>Mutex vs Semaphore → Redlock → Lease-Based Locks → Lock Contention</td><td>Builds on Projects 23, 26</td></tr><tr><td>28</td><td><strong>TypeAhead — Search Autocomplete System</strong></td><td>Trie Data Structure → Prefix Matching → Ranking → Precomputation</td><td>Builds on Projects 5, 10, 16</td></tr><tr><td>29</td><td><strong>EventFlow — Event-Driven Architecture Design</strong></td><td>Event Bus → Event Sourcing → Eventual Consistency → Idempotency</td><td>Builds on Projects 11, 22, 24</td></tr><tr><td>30</td><td><strong>ReadWrite Split — CQRS Pattern Implementation</strong></td><td>Command vs Query Separation → Materialized Views → Sync Strategies</td><td>Builds on Projects 13, 18, 29</td></tr></tbody></table>
+<hr>
+<h2>📋 PHASE 4: HARD — ADVANCED PATTERNS (Projects 31–40)</h2>
+<blockquote>
+<p><em>Multi-component systems with real-world constraints and tradeoffs</em></p>
+</blockquote>
+<table><thead><tr><th>#</th><th>Project Title</th><th>Core Concept Introduced</th><th>Link Dependency</th></tr></thead><tbody><tr><td>31</td><td><strong>ChatSphere — Design a Real-Time Chat System</strong></td><td>WebSockets → Connection Manager → Message Ordering → Presence Service</td><td>Builds on Projects 8, 11, 24, 29</td></tr><tr><td>32</td><td><strong>FeedEngine — Design a News Feed / Timeline System</strong></td><td>Fan-Out-On-Write vs Fan-Out-On-Read → Hybrid Approach → Feed Ranking</td><td>Builds on Projects 5, 14, 24, 30</td></tr><tr><td>33</td><td><strong>CacheGrid — Design a Distributed Cache Cluster</strong></td><td>Partitioned Cache → Replication in Cache → Gossip Protocol → Consistency</td><td>Builds on Projects 5, 14, 23, 26</td></tr><tr><td>34</td><td><strong>StreamBox — Design a Video Streaming Service</strong></td><td>Adaptive Bitrate → Transcoding Pipeline → Manifest Files → Chunked Delivery</td><td>Builds on Projects 12, 17, 25</td></tr><tr><td>35</td><td><strong>RideNow — Design a Ride-Sharing / Location Service</strong></td><td>Geospatial Indexing → Quadtree → Geohash → Real-Time Matching → ETA</td><td>Builds on Projects 18, 20, 28, 31</td></tr><tr><td>36</td><td><strong>TaskMaster — Design a Distributed Task Scheduler</strong></td><td>Cron-Like Scheduling → Delayed Queues → Idempotent Execution → Sharded Timers</td><td>Builds on Projects 11, 18, 26, 27</td></tr><tr><td>37</td><td><strong>PayFlow — Design a Payment Processing System</strong></td><td>Exactly-Once Semantics → Saga Pattern → Compensation → Ledger Design</td><td>Builds on Projects 21, 27, 29, 36</td></tr><tr><td>38</td><td><strong>ShopGuard — Design E-Commerce Inventory &amp; Order System</strong></td><td>Reservation Pattern → Optimistic Locking → Stock Decrement → Consistency</td><td>Builds on Projects 18, 27, 30, 37</td></tr><tr><td>39</td><td><strong>DocSync — Design a Collaborative Document Editor</strong></td><td>Operational Transform (OT) → CRDT Basics → Conflict Resolution → Versioning</td><td>Builds on Projects 26, 27, 29, 31</td></tr><tr><td>40</td><td><strong>GraphNet — Design a Social Graph &amp; Recommendation Engine</strong></td><td>Graph Database → BFS/DFS Traversal → Collaborative Filtering → Fan-Out</td><td>Builds on Projects 10, 14, 28, 32</td></tr></tbody></table>
+<hr>
+<h2>📋 PHASE 5: VERY HARD — MASTERY + BRIDGE TO NEXT SUBJECT (Projects 41–50)</h2>
+<blockquote>
+<p><em>Planet-scale systems requiring synthesis of ALL prior concepts</em></p>
+</blockquote>
+<table><thead><tr><th>#</th><th>Project Title</th><th>Core Concept Introduced</th><th>Link Dependency</th></tr></thead><tbody><tr><td>41</td><td><strong>SearchPlanet — Design a Distributed Search Engine</strong></td><td>Inverted Index → Sharded Index → Ranking (TF-IDF) → Crawl Pipeline</td><td>Builds on Projects 18, 28, 33, 36</td></tr><tr><td>42</td><td><strong>InfiniteStore — Design a Cloud Object Storage (S3-Like)</strong></td><td>Erasure Coding → Metadata Service → Namespace Partitioning → Durability Math</td><td>Builds on Projects 17, 18, 25, 26, 33</td></tr><tr><td>43</td><td><strong>PulseStream — Design a Real-Time Analytics Pipeline</strong></td><td>Stream Processing → Windowing → Aggregation → Lambda/Kappa Architecture</td><td>Builds on Projects 11, 22, 29, 30, 36</td></tr><tr><td>44</td><td><strong>AdServe — Design an Ad Serving / Auction System</strong></td><td>Real-Time Bidding → Auction Logic → Budget Pacing → Low-Latency Constraints</td><td>Builds on Projects 5, 9, 19, 32, 43</td></tr><tr><td>45</td><td><strong>ConsensusCore — Implement Distributed Consensus (Raft)</strong></td><td>Leader Election → Log Replication → Term/Vote → Commit Index → Safety</td><td>Builds on Projects 13, 26, 27, 33, 39</td></tr><tr><td>46</td><td><strong>GlobeDB — Design a Multi-Region Distributed Database</strong></td><td>Conflict-Free Replication → Clock Synchronization → Quorum Reads/Writes</td><td>Builds on Projects 13, 18, 30, 33, 45</td></tr><tr><td>47</td><td><strong>MeetNow — Design a Video Conferencing System</strong></td><td>WebRTC → SFU vs MCU → Selective Forwarding → Bandwidth Estimation</td><td>Builds on Projects 6, 31, 34, 35</td></tr><tr><td>48</td><td><strong>ExchangeCore — Design a Stock Exchange / Order Matching</strong></td><td>Order Book → Matching Engine → Sequencer → Deterministic Replay</td><td>Builds on Projects 11, 27, 36, 37, 43</td></tr><tr><td>49</td><td><strong>ModelServe — Design an ML Model Serving Platform</strong></td><td>Model Registry → A/B Routing → Feature Store → Canary Deployment</td><td>Builds on Projects 6, 19, 20, 34, 43</td></tr><tr><td>50</td><td><strong>SkyPlatform — Design a Complete Cloud Platform (Full Synthesis)</strong></td><td>Multi-Tenancy → Resource Scheduling → Control Plane vs Data Plane → SLA Design</td><td>Builds on ALL Projects (1–49)</td></tr></tbody></table>
+<hr>
+<hr>
+<h1>🔗 DEPENDENCY FLOW SUMMARY</h1>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>Phase 1 ──→ Phase 2 ──→ Phase 3 ──→ Phase 4 ──→ Phase 5
+</span>[Mental     [Patterns    [Real         [Multi-       [Planet-Scale
+ Models]     &amp; Tools]     Systems]      Component]    Synthesis]
+
+Project 1 (Client-Server) ─────────────────────────────────────→ Project 50 (Cloud Platform)
+     Every concept introduced ONCE, then referenced forward</code></pre></div>
+<hr>
+<h1>🎯 WHAT YOU WILL MASTER AFTER ALL 50 PROJECTS</h1>
+<div class="relative"><pre style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: 1px solid rgb(221, 221, 221); background-color: white;"><code style="white-space: pre-wrap; word-break: break-all;"><span>✅ Client-Server to Planet-Scale Distributed Systems
+</span>✅ Database Design → Sharding → Multi-Region Replication
+✅ Caching → Distributed Cache → Consistency Protocols
+✅ REST APIs → API Gateway → Service Mesh Thinking
+✅ Monolith Reasoning → Microservices → Event-Driven Architecture
+✅ Single-Node Locking → Distributed Consensus (Raft)
+✅ Simple CRUD → CQRS → Event Sourcing → Saga Patterns
+✅ Interview-Ready System Design for ANY level</code></pre></div>
+<hr>
+<hr>
+<blockquote>
+<p><strong>Ready to begin Project 1: "The Pizza Shop — Understanding Client-Server Model"?</strong><br>
+Please confirm and I will deliver the full elaborated structure with complete working code.</p>
+</blockquote></div>
+</div>
+
+<!-- ========== data-index="3" ========== -->
+<div class="chat-message" data-index="3"></div>
+</div>
+
+<div class="bottom-nav">
+  <a href="index.html" class="nav-btn prev">← home</a>
+  <div class="nav-center">
+    <span class="nav-project-label">PROJECT 0 of 50</span>
+    <span class="nav-project-title">🏗️ SYSTEM DESIGN — COMPLETE MASTERY GUIDE</span>
+    <span class="kbd-hint">← → arrow keys to navigate</span>
+  </div>
+  <a href="project-1.html" class="nav-btn next">Next →</a>
+  <a href="index.html" class="nav-btn home">🏠 TOC</a>
+</div>
+
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+    if (['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) return;
+    if (e.key === 'ArrowRight') { window.location="project-1.html"; }
+    if (e.key === 'ArrowLeft') { window.location="index.html"; }
+  }
+});
+</script>
+
+<script>
+(function() {
+  var bar = document.getElementById('progress-bar');
+  var label = document.getElementById('progress-label');
+  if (bar) bar.style.width = '0%';
+  if (label) label.textContent = '0%';
+})();
+</script>
+
+</body>
+</html>

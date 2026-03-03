@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏗️ System Design — Complete Mastery Guide</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4ff;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+  }
+  .hero {
+    background: linear-gradient(135deg, #3730a3 0%, #4f46e5 50%, #6366f1 100%);
+    color: white;
+    padding: 52px 24px 44px;
+    text-align: center;
+  }
+  .hero-icon { font-size: 3.5rem; line-height: 1; margin-bottom: 16px; }
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+  }
+  .hero p {
+    font-size: 1.05rem;
+    opacity: 0.85;
+    margin: 0 0 24px;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  .start-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: #3730a3;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 13px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    transition: all 0.15s;
+  }
+  .start-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+
+  .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px 24px 60px;
+  }
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #3730a3;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .toc-phase { margin-bottom: 28px; }
+  .toc-phase-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4338ca;
+    margin-bottom: 8px;
+    padding: 9px 14px;
+    background: #eef2ff;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+  }
+  .toc-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  @media (max-width: 640px) { .toc-list { grid-template-columns: 1fr; } }
+  .toc-item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1e293b;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    transition: all 0.15s;
+    height: 100%;
+  }
+  .toc-item a:hover { background: #eef2ff; border-color: #c7d2fe; color: #3730a3; transform: translateX(3px); }
+  .toc-num { font-weight: 800; color: #4f46e5; min-width: 28px; font-size: 0.8em; }
+  .toc-title { font-size: 0.87rem; font-weight: 500; line-height: 1.3; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-icon">🏗️</div>
+  <h1>System Design<br>Complete Mastery Guide</h1>
+  <p>50 Projects — Problem-Driven, Progressive Complexity</p>
+  <div class="hero-stats">
+    <span class="hero-stat">📚 51 Chapters</span>
+    <span class="hero-stat">11 Phases</span>
+    <span class="hero-stat">🔧 Hands-on Code</span>
+    <span class="hero-stat">⬅️ ➡️ Keyboard Nav</span>
+  </div>
+  <a href="project-0.html" class="start-btn">🚀 Start Learning →</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="section-title">📖 Table of Contents</div>
+  <div class="toc-phase">
+  <div class="toc-phase-title">🌱 Phase 0: Introduction</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-0.html">
+    <span class="toc-num">#00</span>
+    <span class="toc-title">🏗️ SYSTEM DESIGN — COMPLETE MASTERY GUIDE</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🔧 Phase 1: Core Building Blocks</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-1.html">
+    <span class="toc-num">#01</span>
+    <span class="toc-title">THE PIZZA SHOP — UNDERSTANDING CLIENT-SERVER MODEL</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-2.html">
+    <span class="toc-num">#02</span>
+    <span class="toc-title">THE RESTAURANT MENU — DESIGNING YOUR FIRST REST API</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-3.html">
+    <span class="toc-num">#03</span>
+    <span class="toc-title">THE NOTEBOOK — SINGLE DATABASE DESIGN &amp; SCHEMA MODELING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-4.html">
+    <span class="toc-num">#04</span>
+    <span class="toc-title">THE OVERFLOWING COUNTER — VERTICAL VS HORIZONTAL SCALING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-5.html">
+    <span class="toc-num">#05</span>
+    <span class="toc-title">THE LIBRARIAN&#x27;S MEMORY — CACHING FUNDAMENTALS</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🌐 Phase 2: Networking &amp; State</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-6.html">
+    <span class="toc-num">#06</span>
+    <span class="toc-title">THE TRAFFIC COP — LOAD BALANCER BASICS</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-7.html">
+    <span class="toc-num">#07</span>
+    <span class="toc-title">THE PHONE BOOK — DNS &amp; DOMAIN RESOLUTION</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-8.html">
+    <span class="toc-num">#08</span>
+    <span class="toc-title">THE HOTEL KEY CARD — STATELESS VS STATEFUL SERVICES</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-9.html">
+    <span class="toc-num">#09</span>
+    <span class="toc-title">THE BOUNCER AT THE DOOR — API RATE LIMITER</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-10.html">
+    <span class="toc-num">#10</span>
+    <span class="toc-title">THE BOOK INDEX — DATABASE INDEXING &amp; QUERY OPTIMIZATION</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🔄 Phase 3: Reliability &amp; Distribution</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-11.html">
+    <span class="toc-num">#11</span>
+    <span class="toc-title">THE POST OFFICE — MESSAGE QUEUES &amp; ASYNC PROCESSING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-12.html">
+    <span class="toc-num">#12</span>
+    <span class="toc-title">THE WAREHOUSE NETWORK — CDN &amp; STATIC CONTENT DELIVERY</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-13.html">
+    <span class="toc-num">#13</span>
+    <span class="toc-title">THE BACKUP DIARY — DATABASE REPLICATION (READ REPLICAS)</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-14.html">
+    <span class="toc-num">#14</span>
+    <span class="toc-title">THE CIRCULAR SEATING — CONSISTENT HASHING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-15.html">
+    <span class="toc-num">#15</span>
+    <span class="toc-title">THE PULSE CHECK — HEARTBEAT, HEALTH CHECKS &amp; MONITORING</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🏗️ Phase 4: End-to-End Designs I</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-16.html">
+    <span class="toc-num">#16</span>
+    <span class="toc-title">TINYLINK — DESIGN A URL SHORTENER (END-TO-END)</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-17.html">
+    <span class="toc-num">#17</span>
+    <span class="toc-title">PASTEDROP — DESIGN A PASTEBIN / TEXT STORAGE SERVICE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-18.html">
+    <span class="toc-num">#18</span>
+    <span class="toc-title">THE SPLITTING LIBRARY — DATABASE SHARDING STRATEGIES</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-19.html">
+    <span class="toc-num">#19</span>
+    <span class="toc-title">THE FRONT GATE — API GATEWAY DESIGN</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-20.html">
+    <span class="toc-num">#20</span>
+    <span class="toc-title">THE SERVICE DIRECTORY — SERVICE DISCOVERY &amp; REGISTRY</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">⚡ Phase 5: Advanced Distributed Patterns</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-21.html">
+    <span class="toc-num">#21</span>
+    <span class="toc-title">THE CIRCUIT BREAKER — RESILIENCE IN DISTRIBUTED CALLS</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-22.html">
+    <span class="toc-num">#22</span>
+    <span class="toc-title">THE DETECTIVE TRAIL — DISTRIBUTED LOGGING &amp; TRACING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-23.html">
+    <span class="toc-num">#23</span>
+    <span class="toc-title">MINIREDIS — DESIGN A KEY-VALUE STORE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-24.html">
+    <span class="toc-num">#24</span>
+    <span class="toc-title">BUZZALERT — DESIGN A NOTIFICATION SERVICE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-25.html">
+    <span class="toc-num">#25</span>
+    <span class="toc-title">CLOUDVAULT — FILE UPLOAD &amp; STORAGE SERVICE</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🔒 Phase 6: Distributed Systems Deep Dive</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-26.html">
+    <span class="toc-num">#26</span>
+    <span class="toc-title">THE CROWN — LEADER ELECTION IN DISTRIBUTED SYSTEMS</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-27.html">
+    <span class="toc-num">#27</span>
+    <span class="toc-title">THE SHARED LOCK — DISTRIBUTED LOCKING MECHANISMS</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-28.html">
+    <span class="toc-num">#28</span>
+    <span class="toc-title">TYPEAHEAD — SEARCH AUTOCOMPLETE SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-29.html">
+    <span class="toc-num">#29</span>
+    <span class="toc-title">EVENTFLOW — EVENT-DRIVEN ARCHITECTURE DESIGN</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-30.html">
+    <span class="toc-num">#30</span>
+    <span class="toc-title">READWRITE SPLIT — CQRS PATTERN IMPLEMENTATION</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">💬 Phase 7: Capstone Systems I</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-31.html">
+    <span class="toc-num">#31</span>
+    <span class="toc-title">CHATSPHERE — DESIGN A REAL-TIME CHAT SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-32.html">
+    <span class="toc-num">#32</span>
+    <span class="toc-title">FEEDENGINE — DESIGN A NEWS FEED / TIMELINE SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-33.html">
+    <span class="toc-num">#33</span>
+    <span class="toc-title">CACHEGRID — DESIGN A DISTRIBUTED CACHE CLUSTER</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-34.html">
+    <span class="toc-num">#34</span>
+    <span class="toc-title">STREAMBOX — DESIGN A VIDEO STREAMING SERVICE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-35.html">
+    <span class="toc-num">#35</span>
+    <span class="toc-title">RIDENOW — DESIGN A RIDE-SHARING / LOCATION SERVICE</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">💳 Phase 8: Capstone Systems II</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-36.html">
+    <span class="toc-num">#36</span>
+    <span class="toc-title">TASKMASTER — DESIGN A DISTRIBUTED TASK SCHEDULER</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-37.html">
+    <span class="toc-num">#37</span>
+    <span class="toc-title">PAYFLOW — DESIGN A PAYMENT PROCESSING SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-38.html">
+    <span class="toc-num">#38</span>
+    <span class="toc-title">SHOPGUARD — DESIGN E-COMMERCE INVENTORY &amp; ORDER SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-39.html">
+    <span class="toc-num">#39</span>
+    <span class="toc-title">DOCSYNC — DESIGN A COLLABORATIVE DOCUMENT EDITOR</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-40.html">
+    <span class="toc-num">#40</span>
+    <span class="toc-title">GRAPHNET — DESIGN A SOCIAL GRAPH &amp; RECOMMENDATION ENGINE</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🔍 Phase 9: Expert-Level Systems</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-41.html">
+    <span class="toc-num">#41</span>
+    <span class="toc-title">SEARCHPLANET — DESIGN A DISTRIBUTED SEARCH ENGINE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-42.html">
+    <span class="toc-num">#42</span>
+    <span class="toc-title">INFINITESTORE — DESIGN A CLOUD OBJECT STORAGE (S3-LIKE)</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-43.html">
+    <span class="toc-num">#43</span>
+    <span class="toc-title">PULSESTREAM — DESIGN A REAL-TIME ANALYTICS PIPELINE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-44.html">
+    <span class="toc-num">#44</span>
+    <span class="toc-title">ADSERVE — DESIGN AN AD SERVING / AUCTION SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-45.html">
+    <span class="toc-num">#45</span>
+    <span class="toc-title">CONSENSUSCORE — IMPLEMENT DISTRIBUTED CONSENSUS (RAFT)</span>
+  </a>
+</li>
+</ul>
+</div>
+<div class="toc-phase">
+  <div class="toc-phase-title">🌍 Phase 10: Grand Synthesis</div>
+  <ul class="toc-list"><li class="toc-item">
+  <a href="project-46.html">
+    <span class="toc-num">#46</span>
+    <span class="toc-title">GLOBEDB — DESIGN A MULTI-REGION DISTRIBUTED DATABASE</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-47.html">
+    <span class="toc-num">#47</span>
+    <span class="toc-title">MEETNOW — DESIGN A VIDEO CONFERENCING SYSTEM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-48.html">
+    <span class="toc-num">#48</span>
+    <span class="toc-title">EXCHANGECORE — DESIGN A STOCK EXCHANGE / ORDER MATCHING</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-49.html">
+    <span class="toc-num">#49</span>
+    <span class="toc-title">MODELSERVE — DESIGN AN ML MODEL SERVING PLATFORM</span>
+  </a>
+</li>
+<li class="toc-item">
+  <a href="project-50.html">
+    <span class="toc-num">#50</span>
+    <span class="toc-title">SKYPLATFORM — DESIGN A COMPLETE CLOUD PLATFORM (FULL SYNTHESIS)</span>
+  </a>
+</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
